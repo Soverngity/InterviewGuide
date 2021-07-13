@@ -16,8 +16,8 @@
 **main函数执行之后**：  
 
 + 全局对象的析构函数会在main函数之后执行； 
-+ 可以用 **`atexit`** 注册一个函数，它会在main 之后执行;
-+ `__attribute__((destructor))`
++ 可以用 **`atexit`** 注册一个函数，它会在main 之后执行;   【按声明顺序相反的顺序进行调用】
++ `__attribute__((destructor))`			     【先执行atexit声明的函数最后执行destructor】		
 
 >update1:https://github.com/forthespada/InterviewGuide/issues/2 ,由`stanleyguo0207`提出 - 2021.03.22
 
